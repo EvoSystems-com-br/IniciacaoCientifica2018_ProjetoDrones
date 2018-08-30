@@ -1,0 +1,99 @@
+
+#myVideo{
+	max-width: auto;
+	height:400px;
+}
+
+
+#videoDiv{
+  position: absolute;
+  top: 800px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+#videoBox{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 680px;
+  margin: 0;
+}
+
+#demoVideoBox{
+  display: flex;
+  flex:1 0 100px;
+  flex-flow: column wrap;
+  background-color: #005598;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+#espiralVideoBox{
+  display: flex;
+  flex: 1 0 100px;
+  flex-flow: column wrap;
+  background-color: #20A751;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+#esquadrilhaVideoBox{
+  display: flex;
+  flex:1 0 100px;
+  flex-flow: column wrap;
+  background-color: #BC3F3F;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+
+
+.myVideoButton{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+
+  font-size: 24px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+              0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+#demoVideoButton{
+  background-color: #E0F1FC;
+  color: #005598;
+}
+
+#demoVideoButton:focus{
+  background-color: #306D8E;
+  color: #E0F1FC;
+}
+
+
+#espiralVideoButton{
+  background-color: #C0F2D1;
+  color: #20A751;
+}
+#espiralVideoButton:focus{
+  background-color: #268E46;
+  color: #C0F2D1;
+}
+
+
+#esquadrilhaVideoButton{
+  background-color: #F4B8B8;
+  color: #BC3F3F;
+
+}
+#esquadrilhaVideoButton:focus{
+  background-color: #932F2F;
+  color: #F4B8B8;
+}
