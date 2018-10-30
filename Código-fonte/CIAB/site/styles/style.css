@@ -1,0 +1,196 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body, .viewport {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+
+
+.text{
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 24px;
+}
+.text2{
+  color: #ffffff;
+  font-size: 28px;
+  margin-left:50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-align:left;
+
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #78909c;
+}
+h2  {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+#bigBox{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 640px;
+  margin: 0;
+}
+
+#demoBox{
+  display: flex;
+  flex:1 0 100px;
+  flex-flow: column wrap;
+  background-color: #005598;
+  background-image: url('demo_pontilhado.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+#espiralBox{
+  display: flex;
+  flex: 1 0 100px;
+  flex-flow: column wrap;
+  background-color: #20A751;
+  background-image: url('espiral_pontilhado.png') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+#esquadrilhaBox{
+  display: flex;
+  flex:1 0 100px;
+  flex-flow: column wrap;
+  background-color: #BC3F3F;
+  background-image: url('esquadrilha_pontilhado.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+
+#demoButton{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+
+  background-color: #E0F1FC;
+  color: #005598;
+  font-size: 42px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#demoButton:focus{
+  margin-top: 10px;
+  width: 250px;
+  height: 100px;
+
+  background-color: #306D8E;
+  color: #E0F1FC;
+  font-size: 42px;
+  outline: none;
+}
+
+
+#espiralButton{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+
+  background-color: #C0F2D1;
+  color: #20A751;
+  font-size: 42px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#espiralButton:focus{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+
+  background-color: #268E46;
+  color: #C0F2D1;
+  font-size: 42px;
+  outline: none;
+}
+
+
+#esquadrilhaButton{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+
+  background-color: #F4B8B8;
+  color: #BC3F3F;
+  font-size: 42px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#esquadrilhaButton:focus{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+
+  background-color: #932F2F;
+  color: #F4B8B8;
+  font-size: 42px;
+  outline: none;
+}
+
+
+
+#statusBox{
+  position: absolute;
+  right: 25px;
+  top: 548px;
+}
+#marginDiv{
+  align-self:center;
+  margin-bottom: 10
+}
+
+#statusButton{
+  width: 180px;
+  height: 67px;
+
+  background-color: #F4D9D9;
+  color: #BC3F3F;
+  font-size: 40px;
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#statusButton:focus{
+  width: 180px;
+  height: 67px;
+
+  background-color: #932F2F;
+  color: #F4D9D9;
+  font-size: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  outline: none;
+}
+
+#statusText{
+  color: #ffffff;
+  font-size: 28px;
+
+  vertical-align: sub;
+  margin-left: 240px;
+  margin-right: 20px;
+}

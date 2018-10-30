@@ -1,0 +1,66 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <title>Drone-Comando</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="styles/videoStyle.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <title> Mini-Drones: central de comando</title>
+</head>
+
+<body>
+
+  <div class="box" id="bigBox">
+    <div class="box" id="demoBox">
+      <div class="text">Um Drone</div>
+      <div class="demo"><input type="button" id="demoButton" value="Demo" onclick="commandPressed('demo');"/></div>
+      <div class="text2">Uma pequena demonstração de todos os movimentos</div>
+    </div>
+
+    <div class="box" id="espiralBox">
+      <div class="text">Dois Drones</div>
+      <div class="myButton"><input type="button" id="espiralButton" value="Espiral" onclick="commandPressed('espiral');"/></div>
+      <div class="text2">Coordenação de ambos os drones formando uma harmoniosa espiral</div>
+      <div id="marginDiv"></div>
+    </div>
+
+    <div class="box" id="esquadrilhaBox">
+      <div class="text">Dois drones</div>
+      <div class="myButton"><input type="button" id="esquadrilhaButton" value="Esquadrilha" onclick="commandPressed('esquadrilha');"/></div>
+      <div class="text2">Um drone seguirá o outro, repetindo todos os seus movimentos</div>
+    </div>
+  </div>
+
+  <div class="fab" id="statusBox">
+    <span id="statusText"> Iniciando...</span>
+    <span><input type="button" id="statusButton" value="Enviar" onclick="sendCommand()"/></span>
+  </div>
+
+
+  <div class="box" id="videoBox">
+    <div class="box" id="demoVideoBox">
+      <div ><input class="myVideoButton"type="button" id="demoVideoButton" value="Video Demo" onclick="videoPressed('demo');"/></div>
+    </div>
+
+    <div class="box" id="espiralVideoBox">
+      <div ><input class="myVideoButton" type="button" id="espiralVideoButton" value="Video Espiral" onclick="videoPressed('espiral');"/></div>
+    </div>
+
+    <div class="box" id="esquadrilhaVideoBox">
+      <div><input class="myVideoButton" type="button" id="esquadrilhaVideoButton" value="Video Esquadrilha" onclick="videoPressed('esquadrilha');"/></div>
+    </div>
+  </div>
+
+  <div class="box" id="videoDiv">
+    <iframe id="myVideo"
+      src="https://www.youtube.com/embed/LIVAmrgerTI?controls=0">
+    </iframe>
+  </div>
+
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
